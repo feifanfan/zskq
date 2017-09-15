@@ -1,0 +1,27 @@
+[ 2017-08-18T16:07:11+08:00 ] 127.0.0.1 /admin.php?s=/Index/getParentCate&pid=0&rnd=84721
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xyh_model` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_category category LEFT JOIN xyh_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,model.name AS modelname,model.tablename AS tablename FROM xyh_category category LEFT JOIN xyh_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0010s ]
+
+[ 2017-08-18T16:13:13+08:00 ] 127.0.0.1 /admin.php?s=/Index/getParentCate&pid=0&rnd=47747
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xyh_model` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_category category LEFT JOIN xyh_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,model.name AS modelname,model.tablename AS tablename FROM xyh_category category LEFT JOIN xyh_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0010s ]
+
+[ 2017-08-18T16:22:56+08:00 ] 127.0.0.1 /admin.php?s=/Index/getParentCate&pid=0&rnd=97171
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `xyh_model` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_category category LEFT JOIN xyh_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,model.name AS modelname,model.tablename AS tablename FROM xyh_category category LEFT JOIN xyh_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0000s ]
+

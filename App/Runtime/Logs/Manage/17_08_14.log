@@ -1,0 +1,45 @@
+[ 2017-08-14T16:51:57+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:52:13+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:52:52+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:52:53+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:52:53+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:52:53+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:53:14+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:53:15+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:53:15+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:53:15+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:54:28+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:56:24+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:56:24+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:56:51+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'start_date' in 'where clause'
+
+[ 2017-08-14T16:58:23+08:00 ] 127.0.0.1 /admin.php?s=/Salary/index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$stop_date' in 'where clause'
+

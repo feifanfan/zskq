@@ -1,0 +1,120 @@
+<extend name="Public:base" />
+<block name="content">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em> 
+			添加提成办法
+		    </h3>
+		</div>
+		
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-12">
+
+				<form method='post' class="form-horizontal" id="form_do" name="form_do" action="{:U('addPost')}">
+					<div class="form-group">
+							<label for="inputName" class="col-sm-2 control-label">办法名称</label>
+							<div class="col-sm-9">
+								<input type="text" name="name" id="inputName" class="form-control" placeholder="提成办法名称" required="required" />		
+							</div>
+					</div>
+					<div class="form-group">
+						<label for="inputName" class="col-sm-2 control-label">选择等级</label>
+						<div class="col-sm-9">
+							<select name="level" class="form-control">
+								<option value="0">请选择等级</option>
+								<option value="1">等级一</option>
+								<option value="2">等级二</option>
+								<option value="3">等级三</option>
+								<option value="4">等级四</option>
+								<option value="5">等级五</option>
+								<!-- <option value="6">等级五</option>
+								<option value="7">等级五</option> -->
+							</select>		
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputName" class="col-sm-2 control-label">选择科室</label>
+						<div class="col-sm-9">
+							<select name="oid" class="form-control">
+								<option value="0">请选择科室</option>
+								<foreach name='office' item='v'>
+								<option value="{$v.id}" <if condition="$pid eq $v['id']">selected="selected"</if>>{$v.name}</option>
+								</foreach>
+							</select>		
+						</div>
+					</div>
+
+					<div class="form-group">
+							<label for="inputName" class="col-sm-2 control-label">提成办法</label>
+							<div class="col-sm-9">
+								<input type="text" name="boundary" placeholder="" required="required" />元以下提成比率为<input type="tetx" name="downper">%,以上提成比率为<input type="text" name="upper">		
+							</div>
+					</div>
+					<div class="form-group">
+							<label for="inputName" class="col-sm-2 control-label"></label>
+							<div class="col-sm-9">
+								<span style="color: red">如果提成全部按照一个比例，则填写0元，以下比率0，以上比率按照实际比率填写	</span>
+							</div>
+					</div>
+<!-- 					<div class="form-group">
+						<label for="inputModule" class="col-sm-2 control-label">模块名</label>
+						<div class="col-sm-9">
+							<input type="text" name="module" id="inputModule" class="form-control" placeholder="模块名：首字母大写" />	
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputAction" class="col-sm-2 control-label">方法名</label>
+						<div class="col-sm-9">
+							<input type="text" name="action" id="inputAction" class="form-control" placeholder="方法名：首字母小大写" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="inputParameter" class="col-sm-2 control-label">附加参数</label>
+						<div class="col-sm-9">
+							<input type="text" name="parameter" id="inputParameter" class="form-control" placeholder="附加参数" />	
+						</div>
+					</div> -->
+
+					<div class="form-group">
+						<label for="inputSort" class="col-sm-2 control-label">排序</label>
+						<div class="col-sm-9">
+							<input type="text" name="sort" id="inputSort" value="1" class="form-control" placeholder="排序" />	
+						</div>
+					</div>
+					
+<!-- 					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">显示</label>
+						<div class="col-sm-9">
+							<label class="radio-inline">
+							<input type="radio" name="status" value="1" checked="checked"  />显示</label>
+							<label class="radio-inline">
+							<input type="radio" name="status" value="0" />隐藏</label>
+						</div>
+					</div>	 -->			
+
+					<div class="row margin-botton-large">
+						<div class="col-sm-offset-2 col-sm-9">
+							<div class="btn-group">							
+								<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-saved"></i>
+									保存
+								</button>
+								<button type="button" onclick="goUrl('{:U('index')}')" class="btn btn-default"> <i class="glyphicon glyphicon-chevron-left"></i>
+									返回
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+	
+		</div>
+	</div>
+
+		
+
+
+</block>

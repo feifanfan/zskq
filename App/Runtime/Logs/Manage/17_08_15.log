@@ -1,0 +1,6 @@
+[ 2017-08-15T08:44:16+08:00 ] 127.0.0.1 /admin.php?s=/Payment/index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like ) AND (  %% )' at line 1
+
+[ 2017-08-15T08:44:18+08:00 ] 127.0.0.1 /admin.php?s=/Payment/index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like ) AND (  %% )' at line 1
+

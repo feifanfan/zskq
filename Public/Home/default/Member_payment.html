@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{$title}-<yang:sitename /></title>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js" ></script>
+<link href="__PUBLIC__/css/css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	td{
+		text-align: center;
+		height: 30px;
+		border:1px solid #ababba;
+	}
+	.xyh-page a,
+.xyh-page span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.xyh-page .current {
+    background-color: #337ab7;
+    border: 1px solid #337ab7;
+    color: #fff;
+}
+
+.xyh-page a:first-child,
+.xyh-page span:first-child  {
+  margin-left: 30%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.xyh-page a:last-child,
+.xyh-page span:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+<!--top -->
+<div id="top">
+<include file="Public:header" />
+
+<div class="warp1 mt">
+	<include file="Public:announce" />
+</div>
+<div class="clear"></div>
+
+</div>
+
+<div class="content">
+	<div class="warp1 mt">
+	<include file="Member:left" />
+<div class="right f_r">
+<h3 class="nybt"><span>个人中心</span></h3>
+<div class="form">
+	<form method='post' id="form_do" name="form_do" action="{:U('Member/name')}">		
+		<div class="h3">账单查询</div>
+		<table style="width:100%;">
+		<th>编号</th>
+		<th>病人姓名</th>
+		<th>治疗项目</th>
+		<th>缴纳费用</th>
+		<th>材料费</th>
+		<th>加工费</th>
+		<th>时间</th>
+		<volist name="detail" id="vo">
+			<tr>
+				<td>{$vo.id}</td>
+				<td>{$vo.sick_name}</td>
+				<td>{$vo.project}</td>
+				<td>{$vo.pay_fee}</td>
+				<td>{$vo.process_cost}</td>
+				<td>{$vo.material_cost}</td>
+				<td>{$vo.time}</td>
+			
+			</tr>
+		</volist>
+		</table>
+		<div class="xyh-page">
+			{$page}
+		</div>
+
+	</form>
+
+	</div>
+
+</div>
+<div class=" clear"></div>
+</div>
+</div>
+
+<include file="Public:footer" />
+
+</body>
+</html>

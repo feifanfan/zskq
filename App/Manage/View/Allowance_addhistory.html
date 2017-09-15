@@ -1,0 +1,92 @@
+<extend name="Public:base" />
+
+<block name="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header"><em class="glyphicon glyphicon-cloud-upload"></em> 
+            填写饭补及全勤信息<!-- {$type}  -->        
+            </h3> 
+        </div>
+        
+    </div>
+
+    <div class="row margin-botton">
+        <div class="col-sm-6 column">
+            <div class="btn-group btn-group-md">           
+               <!--  <button class="btn btn-primary" type="button" onclick="goUrl('{:U('addhistory')}')"><em class="glyphicon glyphicon-plus-sign"></em> 查看添加历史</button>              
+                 <button class="btn btn-default" type="button" onclick="doGoBatchh('{:U('add', array('batchFlag' => 1))}', '所有医生的饭补信息以最后一次填写计算')"><em class="glyphicon glyphicon-remove-circle"></em> 批量添加</button>
+                 <span style="color: red">*所有医生的饭补及全勤信息以最后一次填写计算,即重复填写也按照最后一次的填写数据计算<br>您现在看到的表中数据即为上次（最新）数据</span> -->
+            </div>
+        </div>
+        <div class="col-sm-6 text-right">
+            
+                <form class="form-inline" method="post" action="{:U('addhistory')}">
+                  <div class="form-group">
+                    <label class="sr-only" for="inputKeyword">关键字</label>
+                    <input type="text" class="form-control" name="keyword" id="inputKeyword" placeholder="关键字" value="{$keyword}">
+                  </div>
+                  <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="" method="post" id="form_do" name="form_do">
+                <div class="table-responsive">
+                    <table class="table table-hover xyh-table-bordered-out">
+                        <thead>
+                            <tr class="active">
+                               
+                                <th>编号</th>
+                                
+                                <th>姓名</th>
+                                <!-- <th>会员组</th> -->
+                                <th>餐补天数</th>
+                                <th>是否全勤</th>
+                                <th>添加时间</th>
+                               <!--  <th class="text-right">操作</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name='list' item='v'>
+                        <tr>
+                            
+                            <td>{$v.id}</td>
+                            
+                            <td>{$v.realname}</td>
+                            <!-- <td>{$v.groupname}</td> -->
+                           <td>{$v.num}天</td>
+                           <td>
+                            <if condition="$v.isall eq 1">
+                            是
+                            <else />×
+                            </if>
+                            </td>
+                            <td>{$v.time|date="Y-m-d H时",###}</td>
+<!--                             <td class="text-right">
+                            <a href="{:U('person',array('id' => $v['id']), '')}" class="label label-info">详情</a>
+                            <a href="{:U('edit',array('id' => $v['id']), '')}" class="label label-success">编辑</a>
+                            <a href="javascript:;" onclick="toConfirm('{:U('del',array('id' => $v['id']), '')}', '确实要删除吗？')" class="label label-danger">删除</a>                          
+                            </td> -->
+                        </tr>
+                        </foreach>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div class="xyh-page">
+                        {$page}
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    </block>

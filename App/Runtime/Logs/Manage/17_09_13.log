@@ -1,0 +1,19 @@
+[ 2017-09-13T15:46:39+08:00 ] 127.0.0.1 /admin.php?s=/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xyh_admin` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xyh_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xyh_admin` SET `logintime`='1505288799',`loginip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xyh_role_user` [ RunTime:0.0570s ]
+SQL: SELECT `role_id` FROM `xyh_role_user` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0500s ]
+
+[ 2017-09-13T15:46:40+08:00 ] 127.0.0.1 /admin.php?s=/Index/getParentCate&pid=0&rnd=76923
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `xyh_model` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM xyh_category category LEFT JOIN xyh_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,model.name AS modelname,model.tablename AS tablename FROM xyh_category category LEFT JOIN xyh_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0000s ]
+
